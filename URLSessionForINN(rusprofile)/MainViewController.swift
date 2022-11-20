@@ -21,15 +21,21 @@ class MainViewController: UIViewController {
         guard let url = URL(string: Link.urlOne.rawValue) else { return }
         URLSession.shared.dataTask(with: url) { data, _, error in
             
-            guard let error = error else {
-                print("Error")
-                return
-            }
+            guard let error = error else { return }
             
             guard let data = data else { return }
-            
-            print(data)
 
+            do {
+                let json = try JSONDecoder().decode(Genderize.self, from: data)
+                print(json.name)
+                print(json.count)
+                print(json.gender)
+                print(json.probability)
+            } catch let error {
+                print(error)
+            }
+            
+            
         }.resume()
         
     }

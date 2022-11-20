@@ -9,6 +9,12 @@ enum Link: String {
     case urlOne = "https://api.genderize.io/?name=scott"
 }
 
+struct Genderize: Decodable {
+    let count: Int
+    let gender: String
+    let name: String
+    let probability: Double
+}
 
 
 //struct INN: Decodable {
