@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F4FA20D2292A614A00B4772D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA20D1292A614A00B4772D /* AppDelegate.swift */; };
 		F4FA20D4292A614A00B4772D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA20D3292A614A00B4772D /* SceneDelegate.swift */; };
-		F4FA20D6292A614A00B4772D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA20D5292A614A00B4772D /* ViewController.swift */; };
+		F4FA20D6292A614A00B4772D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA20D5292A614A00B4772D /* MainViewController.swift */; };
 		F4FA20D9292A614A00B4772D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FA20D7292A614A00B4772D /* Main.storyboard */; };
 		F4FA20DB292A615000B4772D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FA20DA292A615000B4772D /* Assets.xcassets */; };
 		F4FA20DE292A615000B4772D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FA20DC292A615000B4772D /* LaunchScreen.storyboard */; };
+		F4FA20E6292A62DE00B4772D /* InfoINNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA20E5292A62DE00B4772D /* InfoINNViewController.swift */; };
+		F4FA20E9292A63DE00B4772D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA20E8292A63DE00B4772D /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4FA20CE292A614A00B4772D /* URLSessionForINN(rusprofile).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URLSessionForINN(rusprofile).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FA20D1292A614A00B4772D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4FA20D3292A614A00B4772D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4FA20D5292A614A00B4772D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4FA20D5292A614A00B4772D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F4FA20D8292A614A00B4772D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4FA20DA292A615000B4772D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4FA20DD292A615000B4772D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4FA20DF292A615000B4772D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4FA20E5292A62DE00B4772D /* InfoINNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoINNViewController.swift; sourceTree = "<group>"; };
+		F4FA20E8292A63DE00B4772D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,23 @@
 			children = (
 				F4FA20D1292A614A00B4772D /* AppDelegate.swift */,
 				F4FA20D3292A614A00B4772D /* SceneDelegate.swift */,
-				F4FA20D5292A614A00B4772D /* ViewController.swift */,
+				F4FA20D5292A614A00B4772D /* MainViewController.swift */,
 				F4FA20D7292A614A00B4772D /* Main.storyboard */,
+				F4FA20E5292A62DE00B4772D /* InfoINNViewController.swift */,
 				F4FA20DA292A615000B4772D /* Assets.xcassets */,
 				F4FA20DC292A615000B4772D /* LaunchScreen.storyboard */,
 				F4FA20DF292A615000B4772D /* Info.plist */,
+				F4FA20E7292A63BD00B4772D /* Models */,
 			);
 			path = "URLSessionForINN(rusprofile)";
+			sourceTree = "<group>";
+		};
+		F4FA20E7292A63BD00B4772D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4FA20E8292A63DE00B4772D /* Network.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4FA20D6292A614A00B4772D /* ViewController.swift in Sources */,
+				F4FA20E9292A63DE00B4772D /* Network.swift in Sources */,
+				F4FA20D6292A614A00B4772D /* MainViewController.swift in Sources */,
 				F4FA20D2292A614A00B4772D /* AppDelegate.swift in Sources */,
+				F4FA20E6292A62DE00B4772D /* InfoINNViewController.swift in Sources */,
 				F4FA20D4292A614A00B4772D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
